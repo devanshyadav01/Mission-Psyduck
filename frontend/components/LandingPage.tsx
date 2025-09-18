@@ -44,7 +44,7 @@ export function LandingPage() {
       </header>
 
       {/* Demo Notice */}
-      <div className="bg-psyduck-soft/20 border-b">
+      {/* <div className="bg-psyduck-soft/20 border-b">
         <div className="container mx-auto px-4 py-3">
           <Alert className="border-psyduck-primary/20 bg-psyduck-primary/5">
             <Info className="h-4 w-4 text-psyduck-primary" />
@@ -53,7 +53,7 @@ export function LandingPage() {
             </AlertDescription>
           </Alert>
         </div>
-      </div>
+      </div> */}
 
       {/* Hero Section */}
       <section className="relative py-24 overflow-hidden">

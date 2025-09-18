@@ -56,6 +56,11 @@ export const ROUTE_CONFIG: Record<PageKey, RouteConfig> = {
     protected: true,
     showChatbot: true,
   },
+  founders: {
+    key: 'founders',
+    protected: true,
+    showChatbot: true,
+  },
   settings: {
     key: 'settings',
     protected: true,

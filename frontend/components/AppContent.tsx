@@ -61,6 +61,10 @@ const ContentCreator = React.lazy(() =>
   import('./ContentCreator').then(module => ({ default: module.ContentCreator }))
 );
 
+const FounderPortal = React.lazy(() => 
+  import('./FounderPortal').then(module => ({ default: module.FounderPortal }))
+);
+
 // Optimized loading fallback
 const PageLoadingFallback: React.FC<{ page?: string }> = React.memo(({ page }) => (
   <div className="min-h-[200px] flex items-center justify-center">
@@ -155,6 +159,13 @@ const PageRenderer = React.memo(({ path }: { path: string }) => {
       return (
         <Suspense fallback={<PageLoadingFallback page="Recruiting Form" />}>
           <RecruitingForm />
+        </Suspense>
+      );
+
+    case '/founders':
+      return (
+        <Suspense fallback={<PageLoadingFallback page="Founder Portal" />}>
+          <FounderPortal />
         </Suspense>
       );
     
